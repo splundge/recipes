@@ -1,0 +1,57 @@
+{
+	"recipes": [
+		{
+			"id": 1,
+			"title": "Pancakes",
+			"authors": ["Melissa Mackinlay"],
+			"notes": "This is some notes about the recipe",
+			"cookingTimeMinutes": 20,
+			"prepTimeMinutes": 15,
+			"serves": "4 people",
+			"ingredients": [
+				{
+					"amount": "2 cups",
+					"ingredient": "plain gluten free flour"
+				},
+				{
+					"amount": "1 tbsp",
+					"ingredient": "vanilla essence"
+				},
+				{
+					"amount": "1/4 tsb",
+					"ingredient": "nutmeg"
+				},
+				{
+					"amount": "1/4 tsb",
+					"ingredient": "cinnamon"
+				},
+				{
+					"amount": "1 tsb",
+					"ingredient": "xanthan gum"
+				},
+				{
+					"amount": "4 tsb",
+					"ingredient": "baking powder"
+				},
+				{
+					"amount": "1 cup",
+					"ingredient": "milk"
+				},
+				{
+					"amount": "1",
+					"ingredient": "egg"
+				},
+				{
+					"amount": "1 tbsp",
+					"ingredient": "brown sugar"
+				}
+			],
+			"steps": [
+				"Combine flour, baking powder, brown sugar, cinnamon, nutmeg, vanilla essence, xanthan gum together in a bowl",
+				"Whisk egg and vanilla essence together",
+				"Combine wet and dry ingredients using a eletric mixer (or until smooth)",
+				"Pour onto fry pan and cook individually"
+			]
+		}
+	]
+}
