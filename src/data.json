@@ -7,7 +7,7 @@
 			"notes": "This is some notes about the recipe",
 			"cookingTimeMinutes": 20,
 			"prepTimeMinutes": 15,
-			"serves": "4 people",
+			"servings": 4,
 			"ingredients": [
 				{
 					"amount": "2 cups",
@@ -44,6 +44,71 @@
 				{
 					"amount": "1 tbsp",
 					"ingredient": "brown sugar"
+				}
+			],
+			"steps": [
+				"Combine flour, baking powder, brown sugar, cinnamon, nutmeg, vanilla essence, xanthan gum together in a bowl",
+				"Whisk egg and vanilla essence together",
+				"Combine wet and dry ingredients using a eletric mixer (or until smooth)",
+				"Pour onto fry pan and cook individually"
+			]
+		},
+		{
+			"id": 2,
+			"title": "Spaghetti",
+			"authors": ["Chris Kerr"],
+			"notes": "This is some notes about the recipe",
+			"cookingTimeMinutes": 30,
+			"prepTimeMinutes": 15,
+			"servings": 8,
+			"ingredients": [
+				{
+					"amount": "500g",
+					"ingredient": "pork and veal mince"
+				},
+				{
+					"amount": "1 cup",
+					"ingredient": "crumbs"
+				},
+				{
+					"amount": "1",
+					"ingredient": "lemon"
+				},
+				{
+					"amount": "1",
+					"ingredient": "egg"
+				},
+				{
+					"amount": "1 tsp",
+					"ingredient": "salt"
+				},
+				{
+					"amount": "1 tsp",
+					"ingredient": "pepper"
+				},
+				{
+					"amount": "1 tsp",
+					"ingredient": "thyme"
+				},
+				{
+					"amount": "1 litre",
+					"ingredient": "passata"
+				},
+				{
+					"amount": "1",
+					"ingredient": "tin tomatoes"
+				},
+				{
+					"amount": "1",
+					"ingredient": "onion"
+				},
+				{
+					"amount": "4 cloves",
+					"ingredient": "fresh garlic"
+				},
+				{
+					"amount": "*",
+					"ingredient": "spaghetti pasta"
 				}
 			],
 			"steps": [

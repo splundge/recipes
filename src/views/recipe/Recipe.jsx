@@ -1,22 +1,27 @@
-import React from "react";
-import data from "../../data.json";
+import React, { useMemo } from "react";
+import { useMatch } from "react-router-dom";
+import { useRecipeContext } from "../../components/providers/RecipeProvider";
 import "./recipe.scss";
 
 const Recipe = () => {
-	const pancakes = data.recipes.find((recipe) => recipe.title === "Pancakes");
+	const match = useMatch("/recipes/:recipeId");
+	const recipeContext = useRecipeContext();
+	const recipe = useMemo(
+		() => recipeContext.getRecipe(match?.params?.recipeId),
+		[match?.params?.recipeId, recipeContext.getRecipe]
+	);
 
 	return (
 		<div>
-			<h1>{pancakes.title}</h1>
-			<div>written by: {pancakes.authors.map((author) => author)}</div>
-			<div>cooking time {pancakes.cookingTimeMinutes}mins</div>
-			<div>serves {pancakes.serves}</div>
-
+			<h1>{recipe.title}</h1>
+			<div>written by: {recipe.authors.map((author) => author)}</div>
+			<div>cooking time {recipe.cookingTimeMinutes}mins</div>
+			<div>serves {recipe.servings} people</div>
 			<br />
 			<br />
 			<div>
 				<b>Ingredients:</b>
-				{pancakes.ingredients.map((ingredient) => (
+				{recipe.ingredients.map((ingredient) => (
 					<div>
 						<div>{ingredient.ingredient}</div>
 						<div>amount: {ingredient.amount}</div>
@@ -29,7 +34,7 @@ const Recipe = () => {
 			<br />
 			<div>
 				<b>Method:</b>
-				{pancakes.steps.map((step) => (
+				{recipe.steps.map((step) => (
 					<div>
 						<div>{step}</div>
 						<hr />
@@ -41,7 +46,7 @@ const Recipe = () => {
 			<br />
 			<div>
 				<b>Notes:</b>
-				{pancakes.notes}
+				{recipe.notes}
 			</div>
 		</div>
 	);

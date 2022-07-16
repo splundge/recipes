@@ -13,11 +13,10 @@ const AppRouter = () => {
 				<Routes>
 					<Route path="/" element={<View Component={Home} />} />
 					<Route path="/about" element={<View Component={About} />} />
-					<Route path="/recipes" element={<View Component={Recipes} />} />
-					<Route
-						path="/recipe/:recipeId"
-						element={<View Component={Recipe} />}
-					/>
+					<Route path="/recipes">
+						<Route index element={<View Component={Recipes} />} />
+						<Route path=":recipeId" element={<View Component={Recipe} />} />
+					</Route>
 				</Routes>
 			</NavigationDrawerContextProvider>
 		</BrowserRouter>

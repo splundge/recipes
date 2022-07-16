@@ -1,10 +1,13 @@
 import AppRouter from "../appRouter/AppRouter";
+import RecipeProvider from "../providers/RecipeProvider";
 import "./app.scss";
 
 const App = () => {
 	return (
 		<div className="App">
-			<AppRouter />
+			<RecipeProvider>
+				<AppRouter />
+			</RecipeProvider>
 		</div>
 	);
 };

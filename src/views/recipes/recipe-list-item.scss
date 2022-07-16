@@ -1,0 +1,27 @@
+.recipe-list-item {
+	cursor: pointer;
+	display: flex;
+	&:hover {
+		background-color: #efefef;
+	}
+	border-color: #eeeeee;
+	border-style: solid;
+	border-width: 1px 1px 1px 0px;
+
+	> div {
+		border-left: 1px solid #eeeeee;
+		padding: 8px;
+	}
+	&__title {
+		flex-grow: 1;
+	}
+	&__authors {
+		width: 180px;
+	}
+	&__cook-time {
+		width: 180px;
+	}
+	&__prep-time {
+		width: 180px;
+	}
+}

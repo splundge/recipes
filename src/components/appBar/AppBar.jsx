@@ -7,6 +7,7 @@ import Typography from "@mui/material/Typography";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useNavigationDrawerContext } from "../navigationDrawer/NavigationDrawer";
+import SearchBar from "../searchBar/SearchBar";
 
 const AppBar = () => {
 	const navigationDrawerContext = useNavigationDrawerContext();
@@ -33,9 +34,6 @@ const AppBar = () => {
 						<Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
 							Mel's Recipes
 						</Typography>
-						{/*
-							<Button color="inherit">Login</Button>
-						*/}
 					</Toolbar>
 				</MuiAppBar>
 			</Box>
